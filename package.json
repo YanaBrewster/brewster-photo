@@ -1,0 +1,23 @@
+{
+  "name": "brewster-photo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.0",
+    "grunt": "^1.4.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2"
+  }
+}

@@ -1,0 +1,94 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// Remove excess padding on the right side of the webpage
+html, body{
+	width: 100%;
+	overflow-x: hidden !important;
+}
+
+// Keep footer at bottom of page
+
+html{
+ height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+footer{
+	margin-top: auto;
+}
+
+// ================================================================================
+
+h1{
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 2em;
+	@media (max-width: 991.98px) {
+		font-size: 1.50em;
+	}
+}
+
+h2{
+	font-family: 'Cardo', serif;
+	font-size: 1.75em;
+	font-weight: 700;
+	@media (max-width: 991.98px) {
+		font-size: 1.5em;
+	}
+}
+
+h3{
+	font-family: 'Cardo', serif;
+	font-size: 1.50em;
+	font-weight: 700;
+	@media (max-width: 991.98px) {
+		font-size: 1.50em;
+	}
+}
+
+h4{
+	font-family: 'Cardo', serif;
+	font-size: 1.250em;
+	font-weight: 700;
+	@media (max-width: 991.98px) {
+		font-size: 1.05em;
+	}
+}
+
+h5{
+	font-family: 'Cardo', serif;
+	font-size: 1.625em;
+	font-weight: 700;
+	@media (max-width: 991.98px) {
+		font-size: 1em;
+	}
+}
+
+p{
+	font-family: 'Libre Franklin', sans-serif;
+	color: $grey;
+	font-size: 1.05em;
+	line-height: 31px;
+	@media (max-width: 991.98px) {
+		font-size: 1em;
+	}
+}
+
+ul, li, a {
+	color: $grey;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 500;
+	font-size: 1.05em;
+	@media (max-width: 991.98px) {
+		font-size: 1em;
+	}
+}
