@@ -6,7 +6,7 @@
       the_post();
       ?>
       <div class="card mb-3 mt-3">
-        <div class="card-body">
+        <div class="card-body blog-post-bg">
 
       <?php if(has_post_thumbnail()): ?>
         <div>
@@ -20,7 +20,7 @@
           the_excerpt();
           ?>
           <div class="text-center">
-            <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-dark rounded"> Read More </a>
+            <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-success rounded my-4"> Read More </a>
           </div>
 
         </div>

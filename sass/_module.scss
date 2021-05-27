@@ -13,6 +13,7 @@
   font-size: 1.5em;
   display: inline-flex;
   list-style-type: none;
+  color: white !important;
   letter-spacing: 0.5em;
 }
 
@@ -53,7 +54,7 @@ padding-right: 15px;
 
 #searchsubmit{
   color: white;
-  background: $grey;
+  background: $success;
   border: none;
   border-radius: 5px;
   font-size: 1.250em;
@@ -74,13 +75,19 @@ padding-right: 15px;
 }
 
 // Mobile Nav - CHANGE DROPMENU POSITION
-//
-// .navbar-nav .dropdown-menu {
-//   @media (max-width: 991.98px) {
-//     position: absolute !important;
-//   }
-// }
+
+.navbar-nav .dropdown-menu {
+  @media (max-width: 991.98px) {
+    position: absolute !important;
+  }
+}
 
 .siteTitle{
-  font-size: 1em;
+  font-size: 1.5em;
+}
+
+.btn-success {
+    color: white !important;
+    background-color: $success;
+    border-color: $success;
 }

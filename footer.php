@@ -1,31 +1,28 @@
-<footer class="myTheme pt-3">
+<footer class="myTheme pt-3 footer-bg">
 
 <div class="row">
+  <!-- Footer nav -->
+  <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
 
-  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <!-- Footer nav -->
-    <div class="text-center">
-      <?php
-      wp_nav_menu(
-        array(
-        'theme_location' => 'footer-menu',
-        'menu_class' => 'top-bar',
-        'container'  => 'div',
-        'container_id'  => 'footerMenu'
-        )
-      );
-      ?>
-    </div>
-  </div>
-
-  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="text-center">
           <?php my_social_media_icons() ?>
-    </div>
   </div>
 
-  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <p class="text-center"><?php echo get_theme_mod('brewsterPhotoTheme_footerMessage'); ?> | Created by Yana Brewster | <a href="https://www.yanabrewster.com/">www.yanabrewster.com</a></p>
+  <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+      <?php
+        wp_nav_menu(
+          array(
+          'theme_location' => 'footer-menu',
+          'menu_class' => 'top-bar',
+          'container'  => 'div',
+          'container_id'  => 'footerMenu'
+          )
+        );
+        ?>
+
+  </div>
+
+  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <p class="text-center text-white"><?php echo get_theme_mod('brewsterPhotoTheme_footerMessage'); ?> | Web Design by Yana Brewster | <a class="text-white" href="https://www.yanabrewster.com/">www.yanabrewster.com</a></p>
   </div>
 
 </div>

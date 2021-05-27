@@ -19,41 +19,53 @@
 
   <header class="myTheme">
     <!-- main top navigation -->
-    <nav class="top-nav">
-      <div class="navbar navbar-expand-lg navbar-light bg-white row">
+    <nav class="top-nav py-2">
+
+
+      <div class="row">
+        <div class="navbar navbar-expand-lg navbar-light bg-white">
 
         <!-- logo -->
-        <div class="col-2 col-xs-2 col-sm-2 col-md-3 col-lg-3">
-          <a class="navbar-brand" href="<?php echo home_url(); ?>">
-          <h1 class="siteTitle myTheme"><?php echo get_theme_mod('brewsterPhotoTheme_siteTitleText'); ?></h1>
-           <img src="images/logo.png" class="d-none d-sm-none d-md-none d-lg-block d-xl-block ml-lg-2" alt="Barney Brewster">
+        <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-1 col-xl-1 px-4">
+          <a href="<?php echo home_url();?>">
+              <span class="w-100"><?php the_custom_logo();?></span>
           </a>
         </div>
 
-        <!-- menu -->
-        <div class="col-10 col-xs-10 col-sm-10 col-md-9 col-lg-9">
+        <!-- title -->
+        <div class="col-0 col-xs-0 col-sm-0 col-md-0 col-lg-3 col-xl-3">
+          <h1 class="siteTitle myTheme d-none d-sm-none d-md-none d-lg-block d-xl-block pt-2"><?php echo get_theme_mod('brewsterPhotoTheme_siteTitleText'); ?></h1>
+        </div>
 
-            <button class="navbar-toggler navbar-light mt-2 ml-5" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- icon -->
+        <div class="col-7 col-xs-7 col-sm-7 col-md-7 col-lg-0 col-xl-0 d-lg-none d-xl-none">
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
-            <?php
-            wp_nav_menu( array(
-            'theme_location'	=> 'top-menu',
-            'depth'				=> 2, // 1 = with dropdowns, 0 = no dropdowns.
-            'container'			=> 'div',
-            'container_class'	=> 'collapse navbar-collapse',
-            'container_id'		=> 'bs-example-navbar-collapse-1',
-            'menu_class'		=> 'navbar-nav mr-auto',
-            'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
-            'walker'			=> new WP_Bootstrap_Navwalker()
-            ) );
-            ?>
+          <!-- menu -->
+          <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+              <?php
+              wp_nav_menu( array(
+              'theme_location'	=> 'top-menu',
+              'depth'				=> 2, // 1 = with dropdowns, 0 = no dropdowns.
+              'container'			=> 'div',
+              'container_class'	=> 'collapse navbar-collapse',
+              'container_id'		=> 'bs-example-navbar-collapse-1',
+              'menu_class'		=> 'navbar-nav mx-4',
+              'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
+              'walker'			=> new WP_Bootstrap_Navwalker()
+              ) );
+              ?>
+          </div>
+
+
 
         </div>
       </div>   <!-- End of row -->
 
-    </nav>
+    </nav> <!-- End of nav-->
 
 
   </header>

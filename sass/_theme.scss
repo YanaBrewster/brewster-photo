@@ -33,7 +33,7 @@
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  background-color: $grey!important;
+  background-color: $dark!important;
   color: white !important;
   border-radius: 5px;
   padding: 5px;
@@ -71,11 +71,10 @@ img{
 
 // Blog Pagination
 
-.screen-reader-text{
+.screen-reader-text h2 {
   font-family: 'Libre Franklin', sans-serif;
-	color: $grey;
-  font-weight: 700;
-	font-size: 0.75em !important;
+	color: $dark;
+	font-size: 1em !important;
 }
 
 .page-numbers.current{
@@ -87,4 +86,25 @@ img{
   padding-left: 50px !important;
   padding-right: 10px !important;
   font-style: italic;
+}
+
+// Theme footer
+
+.footer-bg{
+  background-color: $primary;
+}
+
+.footer-txt {
+  color: white !important;
+}
+
+// Cards
+
+.card {
+  border-style: none;
+  border-radius: 10px;
+}
+
+.blog-post-bg{
+    background-color: #f7f7f9;
 }

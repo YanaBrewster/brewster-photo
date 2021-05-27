@@ -10808,9 +10808,8 @@ h5, .h5 {
 
 p {
   font-family: 'Libre Franklin', sans-serif;
-  color: #333333;
+  color: #333333 !important;
   font-size: 1.05em;
-  line-height: 31px;
 }
 @media (max-width: 991.98px) {
   p {
@@ -10819,7 +10818,7 @@ p {
 }
 
 ul, li, a {
-  color: #333333;
+  color: #333333 !important;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
   font-size: 1.05em;
@@ -10849,6 +10848,7 @@ ul, li, a {
   font-size: 1.5em;
   display: inline-flex;
   list-style-type: none;
+  color: white !important;
   letter-spacing: 0.5em;
 }
 
@@ -10875,7 +10875,7 @@ ul, li, a {
 
 #searchsubmit {
   color: white;
-  background: #333333;
+  background: #0066cc !important;
   border: none;
   border-radius: 5px;
   font-size: 1.250em;
@@ -10893,8 +10893,20 @@ ul, li, a {
   list-style-type: none;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+}
+
 .siteTitle {
-  font-size: 1em;
+  font-size: 1.5em;
+}
+
+.btn-success {
+  color: white !important;
+  background-color: #0066cc !important;
+  border-color: #0066cc !important;
 }
 
 .logo {
@@ -10927,7 +10939,7 @@ ul, li, a {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  background-color: #333333 !important;
+  background-color: #333333 !important !important;
   color: white !important;
   border-radius: 5px;
   padding: 5px;
@@ -10963,11 +10975,10 @@ ul, li, a {
   }
 }
 
-.screen-reader-text {
+.screen-reader-text h2, .screen-reader-text .h2 {
   font-family: 'Libre Franklin', sans-serif;
-  color: #333333;
-  font-weight: 700;
-  font-size: 0.75em !important;
+  color: #333333 !important;
+  font-size: 1em !important;
 }
 
 .page-numbers.current {
@@ -10979,6 +10990,23 @@ ul, li, a {
   padding-left: 50px !important;
   padding-right: 10px !important;
   font-style: italic;
+}
+
+.footer-bg {
+  background-color: #000033 !important;
+}
+
+.footer-txt {
+  color: white !important;
+}
+
+.card {
+  border-style: none;
+  border-radius: 10px;
+}
+
+.blog-post-bg {
+  background-color: #f7f7f9;
 }
 
 /*# sourceMappingURL=main.css.map */

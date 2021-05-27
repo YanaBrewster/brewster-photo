@@ -35,7 +35,23 @@ add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
-add_theme_support( 'custom-header' );
+add_theme_support( 'custom-header');
+add_theme_support( 'custom-logo' );
+
+// =============================================================================
+
+// Nav Logo
+
+function brewsterPhotoTheme_custom_logo_setup() {
+  $defaults = array(
+    'height'      => 54,
+    'width'       => 54,
+    'flex-height' => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+  );
+  add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'brewsterPhotoTheme_custom_logo_setup' );
 
 
 // =============================================================================
@@ -91,7 +107,7 @@ function my_register_sidebars() {
       'description'   => __( 'Blog sidebar for main archive.' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h4 class="myHeadings widget-title py-2">',
+      'before_title'  => '<h4 class="myHeadings widget-title pt-2">',
       'after_title'   => '</h4>',
     )
   );
