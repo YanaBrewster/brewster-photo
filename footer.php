@@ -2,12 +2,13 @@
 
 <div class="row">
   <!-- Footer nav -->
-  <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-10 col-xl-10">
 
-          <?php my_social_media_icons() ?>
+    <?php my_social_media_icons() ?>
+
   </div>
 
-  <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 footer-txt">
       <?php
         wp_nav_menu(
           array(
@@ -18,7 +19,6 @@
           )
         );
         ?>
-
   </div>
 
   <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">

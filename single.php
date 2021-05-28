@@ -7,7 +7,7 @@
 
     <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
 
-      <h2 class="myHeadings mb-3"> <?php the_title(); ?> </h2>
+      <h2 class="myHeadings text-center"> <?php the_title(); ?> </h2>
       <div class="px-2 py-2">
         <?php get_template_part('includes/section','blogcontent'); ?>
         <?php wp_link_pages(); ?>

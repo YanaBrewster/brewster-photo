@@ -8,6 +8,10 @@
   }
 }
 
+.siteTitle{
+  font-size: 1.15em;
+}
+
 
 // Header Image
 
@@ -28,75 +32,107 @@
 
 // Show/hide button
 
-.ub-expand-toggle-button{
-  text-align: center !important;
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  background-color: $dark!important;
-  color: white !important;
-  border-radius: 5px;
-  padding: 5px;
-  width: 20%;
-  @media (max-width: 991.98px) {
-    width: 50%;
-  }
-}
-
-//CTA Buttons
-
-.ub-button-block-btn{
-  border-radius: 10px !important;
-}
+// .ub-expand-toggle-button{
+//   text-align: center !important;
+//   display: block !important;
+//   margin-left: auto !important;
+//   margin-right: auto !important;
+//   background-color: $dark!important;
+//   color: white !important;
+//   border-radius: 5px;
+//   padding: 5px;
+//   width: 20%;
+//   @media (max-width: 991.98px) {
+//     width: 50%;
+//   }
+// }
+//
+// //CTA Buttons
+//
+// .ub-button-block-btn{
+//   border-radius: 10px !important;
+// }
 
 // Default WP Images
 
 img{
   @media (max-width: 991.98px) {
-    width: 100% !important;
+    width: 95% !important;
     height: auto !important;
   }
 }
 
 .size-full{
-  @media (max-width: 991.98px) {
-  width: 450px!important;
-  height: auto !important;
+display: none;
 }
-  @media (min-width: 991.99px) {
-  width: 800px!important;
-  height: auto !important;
+
+.img-thumbnail{
+  border: none;
+  width: 95% !important;
 }
+
+.wp-caption-text{
+ font-style: italic;
+ padding-top: 5px;
+ width: 800px;
+ @media (max-width: 991.98px) {
+    width: 250px;
+ }
 }
+
 
 // Blog Pagination
 
-.screen-reader-text h2 {
+.screen-reader-text{
   font-family: 'Libre Franklin', sans-serif;
 	color: $dark;
-	font-size: 1em !important;
+	font-size: 0.75em !important;
 }
 
 .page-numbers.current{
   font-weight: 700;
-  font-size: 1.15em;
+  font-size: 1em;
 }
 
-.prev .page-numbers .next .page-numbers{
-  padding-left: 50px !important;
-  padding-right: 10px !important;
-  font-style: italic;
+.nav-links{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-// Theme footer
+.page-numbers{
+ padding: 5px;
+}
+
+// Theme Footer
 
 .footer-bg{
   background-color: $primary;
 }
 
-.footer-txt {
+.footer-txt a, i {
   color: white !important;
 }
+
+// Footer Nav
+// Social Media Icons
+
+// CHANGE THE SIZE OF FONT AWESOME ICONS
+
+.social-media-icons{
+  font-size: 1.5em;
+  display: inline-flex;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+}
+
+//  MAKE FOOTER LINKS INLINE AND HORIZONTAL
+
+.menu-item{
+display: inline-flex;
+padding-right: 15px;
+}
+
 
 // Cards
 

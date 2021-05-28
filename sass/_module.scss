@@ -5,27 +5,6 @@
 
 // ============================================================================
 
-// Social Media icons
-
-// CHANGE THE SIZE OF FONT AWESOME ICONS
-
-.social-media-icons{
-  font-size: 1.5em;
-  display: inline-flex;
-  list-style-type: none;
-  color: white !important;
-  letter-spacing: 0.5em;
-}
-
-// Footer Nav
-
-//  MAKE FOOTER LINKS INLINE AND HORIZONTAL
-
-.menu-item{
-display: inline-flex;
-padding-right: 15px;
-}
-
 // Search Bar
 
  // Sidebar - CHANGE THE WIDTH AND STYLE OF THE ARCHIVES DROPDOWN SELECT
@@ -57,7 +36,7 @@ padding-right: 15px;
   background: $success;
   border: none;
   border-radius: 5px;
-  font-size: 1.250em;
+  font-size: 1em;
 	font-family: 'Libre Franklin', sans-serif;
   margin-top: 8px;
   padding: 5px;
@@ -82,12 +61,11 @@ padding-right: 15px;
   }
 }
 
-.siteTitle{
-  font-size: 1.5em;
-}
+// Buttons
 
 .btn-success {
     color: white !important;
     background-color: $success;
     border-color: $success;
+    font-size: 1em;
 }

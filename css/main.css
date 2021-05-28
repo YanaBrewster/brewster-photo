@@ -10754,17 +10754,17 @@ footer {
 
 h1, .h1 {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 2em;
+  font-size: 1.85em;
 }
 @media (max-width: 991.98px) {
   h1, .h1 {
-    font-size: 1.50em;
+    font-size: 1.25em;
   }
 }
 
 h2, .h2 {
   font-family: 'Cardo', serif;
-  font-size: 1.75em;
+  font-size: 1.50em;
   font-weight: 700;
 }
 @media (max-width: 991.98px) {
@@ -10775,7 +10775,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-family: 'Cardo', serif;
-  font-size: 1.50em;
+  font-size: 1.25em;
   font-weight: 700;
 }
 @media (max-width: 991.98px) {
@@ -10786,7 +10786,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-family: 'Cardo', serif;
-  font-size: 1.250em;
+  font-size: 1.15em;
   font-weight: 700;
 }
 @media (max-width: 991.98px) {
@@ -10797,7 +10797,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-family: 'Cardo', serif;
-  font-size: 1.625em;
+  font-size: 1.10em;
   font-weight: 700;
 }
 @media (max-width: 991.98px) {
@@ -10809,24 +10809,14 @@ h5, .h5 {
 p {
   font-family: 'Libre Franklin', sans-serif;
   color: #333333 !important;
-  font-size: 1.05em;
-}
-@media (max-width: 991.98px) {
-  p {
-    font-size: 1em;
-  }
+  font-size: 1em;
 }
 
 ul, li, a {
   color: #333333 !important;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
-  font-size: 1.05em;
-}
-@media (max-width: 991.98px) {
-  ul, li, a {
-    font-size: 1em;
-  }
+  font-size: 1em;
 }
 
 .center-l {
@@ -10836,25 +10826,12 @@ ul, li, a {
 }
 
 .text-box-l {
-  width: 50%;
+  width: 90%;
 }
 @media (max-width: 991.98px) {
   .text-box-l {
     width: 90%;
   }
-}
-
-.social-media-icons {
-  font-size: 1.5em;
-  display: inline-flex;
-  list-style-type: none;
-  color: white !important;
-  letter-spacing: 0.5em;
-}
-
-.menu-item {
-  display: inline-flex;
-  padding-right: 15px;
 }
 
 #archives-dropdown-5 {
@@ -10878,7 +10855,7 @@ ul, li, a {
   background: #0066cc !important;
   border: none;
   border-radius: 5px;
-  font-size: 1.250em;
+  font-size: 1em;
   font-family: 'Libre Franklin', sans-serif;
   margin-top: 8px;
   padding: 5px;
@@ -10899,14 +10876,11 @@ ul, li, a {
   }
 }
 
-.siteTitle {
-  font-size: 1.5em;
-}
-
 .btn-success {
   color: white !important;
   background-color: #0066cc !important;
   border-color: #0066cc !important;
+  font-size: 1em;
 }
 
 .logo {
@@ -10916,6 +10890,10 @@ ul, li, a {
   .logo {
     font-size: 1.5em;
   }
+}
+
+.siteTitle {
+  font-size: 1.15em;
 }
 
 .headerImage {
@@ -10934,70 +10912,72 @@ ul, li, a {
   }
 }
 
-.ub-expand-toggle-button {
-  text-align: center !important;
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  background-color: #333333 !important !important;
-  color: white !important;
-  border-radius: 5px;
-  padding: 5px;
-  width: 20%;
-}
-@media (max-width: 991.98px) {
-  .ub-expand-toggle-button {
-    width: 50%;
-  }
-}
-
-.ub-button-block-btn {
-  border-radius: 10px !important;
-}
-
 @media (max-width: 991.98px) {
   img {
-    width: 100% !important;
+    width: 95% !important;
     height: auto !important;
   }
 }
 
+.size-full {
+  display: none;
+}
+
+.img-thumbnail {
+  border: none;
+  width: 95% !important;
+}
+
+.wp-caption-text {
+  font-style: italic;
+  padding-top: 5px;
+  width: 800px;
+}
 @media (max-width: 991.98px) {
-  .size-full {
-    width: 450px !important;
-    height: auto !important;
-  }
-}
-@media (min-width: 991.99px) {
-  .size-full {
-    width: 800px !important;
-    height: auto !important;
+  .wp-caption-text {
+    width: 250px;
   }
 }
 
-.screen-reader-text h2, .screen-reader-text .h2 {
+.screen-reader-text {
   font-family: 'Libre Franklin', sans-serif;
   color: #333333 !important;
-  font-size: 1em !important;
+  font-size: 0.75em !important;
 }
 
 .page-numbers.current {
   font-weight: 700;
-  font-size: 1.15em;
+  font-size: 1em;
 }
 
-.prev .page-numbers .next .page-numbers {
-  padding-left: 50px !important;
-  padding-right: 10px !important;
-  font-style: italic;
+.nav-links {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-numbers {
+  padding: 5px;
 }
 
 .footer-bg {
   background-color: #000033 !important;
 }
 
-.footer-txt {
+.footer-txt a, i {
   color: white !important;
+}
+
+.social-media-icons {
+  font-size: 1.5em;
+  display: inline-flex;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+}
+
+.menu-item {
+  display: inline-flex;
+  padding-right: 15px;
 }
 
 .card {

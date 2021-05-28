@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <header class="myTheme">
+  <header class="myTheme border-bottom">
     <!-- main top navigation -->
     <nav class="top-nav py-2">
 
@@ -26,15 +26,15 @@
         <div class="navbar navbar-expand-lg navbar-light bg-white">
 
         <!-- logo -->
-        <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-1 col-xl-1 px-4">
+        <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-1 col-xl-1 d-flex justify-content-end">
           <a href="<?php echo home_url();?>">
               <span class="w-100"><?php the_custom_logo();?></span>
           </a>
         </div>
 
         <!-- title -->
-        <div class="col-0 col-xs-0 col-sm-0 col-md-0 col-lg-3 col-xl-3">
-          <h1 class="siteTitle myTheme d-none d-sm-none d-md-none d-lg-block d-xl-block pt-2"><?php echo get_theme_mod('brewsterPhotoTheme_siteTitleText'); ?></h1>
+        <div class="col-0 col-xs-0 col-sm-0 col-md-0 col-lg-2 col-xl-2">
+          <h1 class="siteTitle myTheme d-none d-sm-none d-md-none d-lg-block d-xl-block pt-2 mx-3"><?php echo get_theme_mod('brewsterPhotoTheme_siteTitleText'); ?></h1>
         </div>
 
         <!-- icon -->
@@ -45,7 +45,7 @@
         </div>
 
           <!-- menu -->
-          <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+          <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-9 col-xl-9">
               <?php
               wp_nav_menu( array(
               'theme_location'	=> 'top-menu',

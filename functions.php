@@ -93,6 +93,7 @@ add_image_size('blog-medium', 600, 300, false);
 add_image_size('blog-small', 300, 200, true);
 
 
+
 // =============================================================================
 
 // Register Sidebars
@@ -135,6 +136,15 @@ add_theme_support('custom-header', $customHeaderDefaults);
 
 // =============================================================================
 
+// Search Results only Posts
+
+function ScanWPostFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','ScanWPostFilter');
 
 // =============================================================================
 
