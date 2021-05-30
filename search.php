@@ -4,7 +4,7 @@
   <div class="container mx-auto">
     <div class="row py-2">
       <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-        <h3 class="mt-4"> Search Results </h3>
+        <h3 class="mt-4">Search Results</h3>
         <?php if ( have_posts() ) { ?>
           <h2> <?php echo single_cat_title(); ?> </h2>
 
@@ -26,7 +26,7 @@
           </div>
       <?php } ?>
       </div>
-      <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-4">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
         <div id="blog-sidebar" class="widget card px-3 py-3">
           <?php if ( is_active_sidebar( 'blog-sidebar' ) ) : ?>
             <?php dynamic_sidebar( 'blog-sidebar' ); ?>

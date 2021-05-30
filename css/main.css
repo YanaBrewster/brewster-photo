@@ -10883,6 +10883,10 @@ ul, li, a {
   font-size: 1em;
 }
 
+body.home .post img {
+  max-width: 300px;
+}
+
 .logo {
   font-size: 1.75em;
 }

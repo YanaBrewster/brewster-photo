@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php get_header(); ?>
 <?php has_header_image(); ?>
-<section class="container my-2 mx-2 mt-4 mb-4 mx-auto">
+<section class="container mt-4 mb-4 mx-auto">
 
   <div class="row">
 
@@ -15,7 +15,7 @@
     </div>
 
     <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-4">
-      <div id="blog-sidebar" class="widget px-3 py-2">
+      <div id="blog-sidebar" class="widget px-3 py-2 mb-4">
         <?php if ( is_active_sidebar( 'blog-sidebar' ) ) : ?>
           <?php dynamic_sidebar( 'blog-sidebar' ); ?>
         <?php else : ?>

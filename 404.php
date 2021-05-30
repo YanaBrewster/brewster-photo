@@ -5,7 +5,7 @@
 
 <section class="container my-2 mx-2 mt-4 mb-4">
 
-  <div class="row">
+  <div class="row mx-auto">
 
       <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
       <h3 class="mt-5">Whoops, this page does not exist!</h3>
