@@ -9,7 +9,7 @@
 
  // Sidebar - CHANGE THE WIDTH AND STYLE OF THE ARCHIVES DROPDOWN SELECT
 
-#archives-dropdown-5{
+#archives-dropdown-5 {
   font-size: 1em;
 	font-family: 'Libre Franklin', sans-serif;;
   width: 100%;
@@ -17,7 +17,7 @@
 
 //  Sidebar - CHANGE THE WIDTH AND STYLE OF THE CATEGORIES DROPDOWN SELECT
 
-#cat{
+#cat {
   font-size: 1em;
 	font-family: 'Libre Franklin', sans-serif;;
   width: 100%;
@@ -25,13 +25,13 @@
 
 //  Sidebar - CHANGE THE WIDTH OF THE SEARCH INPUT FIELD
 
-#s{
+#s {
   width: 100%;
 }
 
 // Sidebar - CHANGE THE SEARCH BUTTONS STYLE
 
-#searchsubmit{
+#searchsubmit {
   color: white;
   background: $success;
   border: none;
@@ -43,13 +43,13 @@
   width: 100%;
 }
 
-.search-nopage{
+.search-nopage {
   width: 60% !important;
 }
 
 // Sidebar -  MAKE THE CUSTOM SIDEBAR HAVE NO BULLETS
 
-.wp-tag-cloud ul, li{
+.wp-tag-cloud ul, li {
   list-style-type: none;
 }
 
@@ -68,4 +68,18 @@
     background-color: $success;
     border-color: $success;
     font-size: 1em;
+}
+
+.download-button {
+  background-color: $success !important;
+  border-color: $success!important;
+  background-image: none;
+  box-shadow: none;
+  color: white !important;
+  font-size: 1em !important;
+  font-weight: 700 !important;
+}
+
+.wp-block-button__link {
+  color: white !important;
 }

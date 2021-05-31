@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php get_header(); ?>
 
-<section class="container mx-auto mx-2 my-2 mb-5">
+<section class="container mx-2 my-2 mb-5">
 
   <h2 class="myHeadings my-3"> <?php the_title(); ?> </h2>
 

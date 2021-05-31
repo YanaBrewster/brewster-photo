@@ -21,7 +21,7 @@ if (have_posts()) :
     $lname = get_the_author_meta('last_name');
     ?>
 
-    <i><p> <?php echo 'Posted by ' . $fname . ' ' . $lname; ?> </p></i>
+    <i><p class="mt-5"> <?php echo 'Posted by ' . $fname . ' ' . $lname; ?> </p></i>
 
     <?php the_tags( '<p class="pt-4"><b>Tags:</b> ', ', ', '<br /></p>'); ?>
 

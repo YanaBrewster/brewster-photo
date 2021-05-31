@@ -22,7 +22,7 @@
   </div>
 
   <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-    <p class="text-center text-white"><?php echo get_theme_mod('brewsterPhotoTheme_footerMessage'); ?> | Web Design by Yana Brewster | <a class="text-white" href="https://www.yanabrewster.com/">www.yanabrewster.com</a></p>
+    <p class="text-center text-white"><?php echo get_theme_mod('brewsterPhotoTheme_footerMessage'); ?> | Web Design by <a class="text-white" href="https://www.yanabrewster.com/">Yana Brewster</a></p>
   </div>
 
 </div>

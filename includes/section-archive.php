@@ -19,7 +19,7 @@
 
             <?php endif; ?>
 
-          <div class="text-box-l mx-auto">
+          <div class="mx-auto mx-5 px-4">
 
               <?php
               $get_description = get_post(get_post_thumbnail_id())->post_excerpt;

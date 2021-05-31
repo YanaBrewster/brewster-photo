@@ -10826,11 +10826,11 @@ ul, li, a {
 }
 
 .text-box-l {
-  width: 90%;
+  width: 80%;
 }
 @media (max-width: 991.98px) {
   .text-box-l {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -10883,8 +10883,18 @@ ul, li, a {
   font-size: 1em;
 }
 
-body.home .post img {
-  max-width: 300px;
+.download-button {
+  background-color: #0066cc !important !important;
+  border-color: #0066cc !important !important;
+  background-image: none;
+  box-shadow: none;
+  color: white !important;
+  font-size: 1em !important;
+  font-weight: 700 !important;
+}
+
+.wp-block-button__link {
+  color: white !important;
 }
 
 .logo {
@@ -10991,6 +11001,7 @@ body.home .post img {
 
 .blog-post-bg {
   background-color: #f7f7f9;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

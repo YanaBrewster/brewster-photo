@@ -1,6 +1,12 @@
-<?php /* Template Name: Text Page */ ?>
+<?php /* Template Name: Banner Page */ ?>
 <!-- Header -->
 <?php get_header(); ?>
+<?php if(has_header_image()): ?>
+  <div class="px-0 py-0 mt-0 mb-3">
+    <div class="headerImage" style="background-image:url(<?php echo get_header_image(); ?>);">
+    </div>
+  </div>
+<?php endif; ?>
 
 <section class="container mx-auto mx-3 my-3 mb-5">
 

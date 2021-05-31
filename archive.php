@@ -1,6 +1,12 @@
 <!-- Header -->
 <?php get_header(); ?>
-<?php has_header_image(); ?>
+<?php if(has_header_image()): ?>
+  <div class="px-0 py-0 mt-0 mb-3">
+    <div class="headerImage" style="background-image:url(<?php echo get_header_image(); ?>);">
+    </div>
+  </div>
+<?php endif; ?>
+
 <section class="container mt-4 mb-4 mx-auto">
 
   <div class="row">
