@@ -10834,15 +10834,24 @@ ul, li, a {
   }
 }
 
-#archives-dropdown-5 {
+.wpcf7-submit {
+  background-color: #0066cc !important;
+  background-image: none;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none !important;
+  color: white;
   font-size: 1em;
-  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  width: 25%;
+}
+
+#archives-dropdown-7 {
   width: 100%;
 }
 
 #cat {
-  font-size: 1em;
-  font-family: 'Libre Franklin', sans-serif;
   width: 100%;
 }
 
