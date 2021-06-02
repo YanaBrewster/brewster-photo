@@ -2,8 +2,7 @@
 <?php get_header(); ?>
 <?php if(has_header_image()): ?>
   <div class="px-0 py-0 mt-0 mb-3">
-    <div class="headerImage" style="background-image:url(<?php echo get_header_image(); ?>);">
-    </div>
+    <div class="headerImage" style="background-image:url(<?php echo get_header_image(); ?>);"></div>
   </div>
 <?php endif; ?>
 
@@ -13,7 +12,6 @@
 
     <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
       <h2 class="myHeadings"> <?php echo single_cat_title(); ?> </h2>
-
       <?php get_template_part('includes/section','archive'); ?>
 
       <?php previous_posts_link(); ?>
@@ -32,5 +30,6 @@
   </div>
 
 </section>
+
 <!-- Footer -->
 <?php get_footer(); ?>

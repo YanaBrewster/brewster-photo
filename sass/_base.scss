@@ -1,35 +1,41 @@
-*
-{
+*, *:before, *:after  {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-
 // Remove excess padding on the right side of the webpage
-html, body{
-	width: 100%;
+
+body,
+html {
 	overflow-x: hidden !important;
+	width: 100%;
+}
+
+//Default images
+img {
+  @media (max-width: 991.98px) {
+		height: auto !important;
+    width: 95% !important;
+  }
 }
 
 // Keep footer at bottom of page
-
-html{
- height: 100%;
+html {
+	height: 100%;
 }
 
-body{
+body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 }
 
-footer{
+footer {
 	margin-top: auto;
 }
-
 // ================================================================================
-
-h1{
+// Default  text
+h1 {
 	font-family: 'Libre Franklin', sans-serif;
 	font-size: 1.85em;
 	@media (max-width: 991.98px) {
@@ -37,7 +43,7 @@ h1{
 	}
 }
 
-h2{
+h2 {
 	font-family: 'Cardo', serif;
 	font-size: 1.50em;
 	font-weight: 700;
@@ -46,7 +52,7 @@ h2{
 	}
 }
 
-h3{
+h3 {
 	font-family: 'Cardo', serif;
 	font-size: 1.25em;
 	font-weight: 700;
@@ -55,7 +61,7 @@ h3{
 	}
 }
 
-h4{
+h4 {
 	font-family: 'Cardo', serif;
 	font-size: 1.15em;
 	font-weight: 700;
@@ -64,7 +70,7 @@ h4{
 	}
 }
 
-h5{
+h5 {
 	font-family: 'Cardo', serif;
 	font-size: 1.10em;
 	font-weight: 700;
@@ -73,15 +79,16 @@ h5{
 	}
 }
 
-p{
-	font-family: 'Libre Franklin', sans-serif;
+p {
 	color: $dark;
+	font-family: 'Libre Franklin', sans-serif;
 	font-size: 1em;
 }
 
-ul, li, a {
-	color: $dark;
+a,
+li,
+ul {
 	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 500;
 	font-size: 1em;
+	font-weight: 500;
 }

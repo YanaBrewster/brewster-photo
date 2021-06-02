@@ -1,8 +1,7 @@
-
 // Contact Form
 
-.wpcf7-submit{
-  background-color:$success;
+.wpcf7-submit {
+  background-color: $success;
   background-image: none;
   border: none;
   border-radius: 3px;
@@ -13,38 +12,32 @@
   padding: 10px;
   width: 25%;
 }
-
 // ============================================================================
-
 // Search Bar
-
 //  // Sidebar - CHANGE THE WIDTH AND STYLE OF THE ARCHIVES DROPDOWN SELECT
 
 #archives-dropdown-7 {
   width: 100%;
 }
-
 //  Sidebar - CHANGE THE WIDTH AND STYLE OF THE CATEGORIES DROPDOWN SELECT
 
 #cat {
   width: 100%;
 }
-
 //  Sidebar - CHANGE THE WIDTH OF THE SEARCH INPUT FIELD
 
 #s {
   width: 100%;
 }
-
 // Sidebar - CHANGE THE SEARCH BUTTONS STYLE
 
 #searchsubmit {
-  color: white;
   background: $success;
   border: none;
   border-radius: 5px;
+  color: white;
   font-size: 1em;
-	font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   margin-top: 8px;
   padding: 5px;
   width: 100%;
@@ -53,13 +46,12 @@
 .search-nopage {
   width: 60% !important;
 }
-
 // Sidebar -  MAKE THE CUSTOM SIDEBAR HAVE NO BULLETS
 
-.wp-tag-cloud ul, li {
+.wp-tag-cloud ul,
+li {
   list-style-type: none;
 }
-
 // Mobile Nav - CHANGE DROPMENU POSITION
 
 .navbar-nav .dropdown-menu {
@@ -67,20 +59,19 @@
     position: absolute !important;
   }
 }
-
 // Buttons
 
 .btn-success {
-    color: white !important;
-    background-color: $success;
-    border-color: $success;
-    font-size: 1em;
+  background-color: $success;
+  border-color: $success;
+  color: white !important;
+  font-size: 1em;
 }
 
 .download-button {
   background-color: $success !important;
-  border-color: $success!important;
   background-image: none;
+  border-color: $success!important;
   box-shadow: none;
   color: white !important;
   font-size: 1em !important;

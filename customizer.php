@@ -3,7 +3,6 @@
 //Hook1
 function mytheme_customize_register( $wp_customize ) {
 
-
    // Footer Message
    $wp_customize->add_section( 'brewsterPhotoTheme_footerSection' , array(
        'title'      => __( 'Footer Text', 'brewsterPhotoTheme' ),
@@ -38,9 +37,7 @@ function mytheme_customize_register( $wp_customize ) {
      'settings'   => 'brewsterPhotoTheme_siteTitleText',
    ) ) );
 
-
    }
-
  add_action( 'customize_register', 'mytheme_customize_register' );
 
 

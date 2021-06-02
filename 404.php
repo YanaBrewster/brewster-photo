@@ -8,10 +8,11 @@
   <div class="row mx-auto">
 
       <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-      <h3 class="mt-5">Whoops, this page does not exist!</h3>
-      <h4>Try searching for a keyword instead?</h4>
-      <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-5 col-xl-5">
-        <?php get_search_form(); ?></div>
+        <h3 class="mt-5">Whoops, this page does not exist!</h3>
+        <h4>Try searching for a keyword instead?</h4>
+        <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-5 col-xl-5">
+          <?php get_search_form(); ?>
+        </div>
       </div>
 
       <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-3 col-xl-3 mb-4">
@@ -24,7 +25,9 @@
       </div>
 
   </div>
+
   </section>
+
   <!-- Footer -->
   <div>
     <?php get_footer(); ?>

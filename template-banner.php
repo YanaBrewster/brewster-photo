@@ -1,4 +1,5 @@
 <?php /* Template Name: Banner Page */ ?>
+
 <!-- Header -->
 <?php get_header(); ?>
 <?php if(has_header_image()): ?>
@@ -16,5 +17,6 @@
   </div>
 
 </section>
+
 <!-- Footer -->
 <?php get_footer(); ?>

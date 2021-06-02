@@ -7,6 +7,7 @@ function load_css(){
   wp_enqueue_style('main');
 
 }
+
 add_action('wp_enqueue_scripts','load_css');
 
 
@@ -23,8 +24,8 @@ function load_js()
   wp_register_script('js', get_template_directory_uri() . '/js/script.js', array('jquery'), false, true);
   wp_enqueue_script('js');
 
-
 }
+
 add_action('wp_enqueue_scripts', 'load_js');
 // =============================================================================
 
@@ -49,10 +50,11 @@ function brewsterPhotoTheme_custom_logo_setup() {
     'flex-height' => true,
     'header-text' => array( 'site-title', 'site-description' ),
   );
+
   add_theme_support( 'custom-logo', $defaults );
 }
-add_action( 'after_setup_theme', 'brewsterPhotoTheme_custom_logo_setup' );
 
+add_action( 'after_setup_theme', 'brewsterPhotoTheme_custom_logo_setup' );
 
 // =============================================================================
 
@@ -74,25 +76,15 @@ register_nav_menus(
 );
 
 // Register Custom Navigation Walker
-
-// Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 // =============================================================================
 
 //Custom Image Size
 
-// the_post_thumbnail( 'thumbnail' );     // Thumbnail (150 x 150 hard cropped)
-// the_post_thumbnail( 'medium' );        // Medium resolution (300 x 300 max height 300px)
-// the_post_thumbnail( 'medium_large' );  // Medium Large (added in WP 4.4) resolution (768 x 0 infinite height)
-// the_post_thumbnail( 'large' );         // Large resolution (1024 x 1024 max height 1024px)
-// the_post_thumbnail( 'full' );          // Full resolution (original size uploaded)
-
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-medium', 600, 300, false);
 add_image_size('blog-small', 300, 200, true);
-
-
 
 // =============================================================================
 
@@ -132,6 +124,7 @@ $customHeaderDefaults = array(
   'height' => 720,
   'default-image' => get_template_directory_uri() . '/images/headers/default.jpg'
 );
+
 add_theme_support('custom-header', $customHeaderDefaults);
 
 // =============================================================================
@@ -144,6 +137,7 @@ function ScanWPostFilter($query) {
     }
     return $query;
 }
+
 add_filter('pre_get_posts','ScanWPostFilter');
 
 // =============================================================================
@@ -156,13 +150,14 @@ function my_customizer_social_media_array() {
   return $social_sites;
 }
 
-/* add settings to create various social media text areas. */
+/* Add settings to create various social media text areas. */
 add_action('customize_register', 'my_add_social_sites_customizer');
 function my_add_social_sites_customizer($wp_customize) {
   $wp_customize->add_section( 'my_social_settings', array(
     'title'    => __('Social Media Icons', 'text-domain'),
     'priority' => 35,
   ) );
+
   $social_sites = my_customizer_social_media_array();
   $priority = 5;
   foreach($social_sites as $social_site) {
@@ -171,6 +166,7 @@ function my_add_social_sites_customizer($wp_customize) {
       'capability'        => 'edit_theme_options',
       'sanitize_callback' => 'esc_url_raw'
     ) );
+
     $wp_customize->add_control( $social_site, array(
       'label'    => __( "$social_site url:", 'text-domain' ),
       'section'  => 'my_social_settings',
@@ -180,7 +176,8 @@ function my_add_social_sites_customizer($wp_customize) {
     $priority = $priority + 5;
   }
 }
-/* takes user input from the customizer and outputs linked social media icons */
+
+/* Takes user input from the customizer and outputs linked social media icons */
 function my_social_media_icons() {
   $social_sites = my_customizer_social_media_array();
   /* any inputs that aren't empty are stored in $active_sites array */
@@ -189,6 +186,7 @@ function my_social_media_icons() {
       $active_sites[] = $social_site;
     }
   }
+
   /* for each active social site, add it as a list item */
   if ( ! empty( $active_sites ) ) {
     echo "<ul class='social-media-icons'>";
@@ -232,7 +230,8 @@ function change_tag_cloud_font_sizes( array $args ) {
 
 // =============================================================================
 
-//remove display tagline/title option
+//Remove display tagline/title option
+
 function de_register( $wp_customize ) {
     $wp_customize->remove_control('display_header_text');
 }

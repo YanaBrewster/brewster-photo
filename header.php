@@ -44,28 +44,26 @@
           </button>
         </div>
 
-          <!-- menu -->
-          <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-9 col-xl-9">
-              <?php
-              wp_nav_menu( array(
-              'theme_location'	=> 'top-menu',
-              'depth'				=> 2, // 1 = with dropdowns, 0 = no dropdowns.
-              'container'			=> 'div',
-              'container_class'	=> 'collapse navbar-collapse',
-              'container_id'		=> 'bs-example-navbar-collapse-1',
-              'menu_class'		=> 'navbar-nav mx-4',
-              'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
-              'walker'			=> new WP_Bootstrap_Navwalker()
-              ) );
-              ?>
-          </div>
-
-
+        <!-- menu -->
+        <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+            <?php
+            wp_nav_menu( array(
+            'theme_location'	=> 'top-menu',
+            'depth'				=> 2, 
+            'container'			=> 'div',
+            'container_class'	=> 'collapse navbar-collapse',
+            'container_id'		=> 'bs-example-navbar-collapse-1',
+            'menu_class'		=> 'navbar-nav mx-4',
+            'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
+            'walker'			=> new WP_Bootstrap_Navwalker()
+            ) );
+            ?>
+        </div>
 
         </div>
       </div>   <!-- End of row -->
 
-    </nav> <!-- End of nav-->
 
+    </nav> <!-- End of nav-->
 
   </header>

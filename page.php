@@ -8,5 +8,6 @@
   <?php get_template_part('includes/section','content'); ?>
 
 </section>
+
 <!-- Footer -->
 <?php get_footer(); ?>

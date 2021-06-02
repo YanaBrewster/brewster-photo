@@ -42,8 +42,8 @@
       </div>
 
   <?php endwhile;
-  else:
-  endif;
+    else:
+    endif;
   ?>
 
 </section>

@@ -1,4 +1,5 @@
 <?php /* Template Name: Text Page */ ?>
+
 <!-- Header -->
 <?php get_header(); ?>
 
@@ -10,5 +11,6 @@
   </div>
 
 </section>
+
 <!-- Footer -->
 <?php get_footer(); ?>
