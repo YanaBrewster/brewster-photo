@@ -12,21 +12,14 @@
             <?php if(has_post_thumbnail()): ?>
 
           <div class="text-center">
-            <h2 class="myHeadings mt-3"> <?php the_title(); ?></h2>
-            <i><p><?php echo get_the_date('F j, Y g:i a'); ?></p></i>
+            <h2 class="myHeadings mt-3 mb-3"> <?php the_title(); ?></h2>
             <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="center-l img-fluid img-thumbnail">
           </div>
 
             <?php endif; ?>
 
-          <div class="mx-auto mx-5 px-4">
+          <div class="mx-auto mx-xs-1 px-xs-1 mx-sm-1 px-sm-1 mx-lg-4 px-lg-4 mt-3">
 
-              <?php
-              $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
-                if(!empty($get_description)){//If description is not empty show the div
-                echo '<i><p class="featured_caption py-2">' . $get_description . '</p></i>';
-                }
-              ?>
 
               <?php
               the_excerpt();

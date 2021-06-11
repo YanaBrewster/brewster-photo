@@ -6,7 +6,7 @@
       <?php my_social_media_icons() ?>
     </div>
 
-    <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 footer-txt">
+    <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 footer-txt d-flex justify-content-end px-4">
         <?php
           wp_nav_menu(
             array(

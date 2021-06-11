@@ -1,9 +1,11 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Libre+Franklin:ital,wght@0,400;0,500;1,400;1,500&display=swap'); // font-family: 'Cardo', serif;
 
+$lg: 1080px;
 $dark: #333333!important;
 $primary: #000033 !important;
 $success: #0066cc !important;
+
 @import 'base';
 @import 'layout';
 @import 'module';

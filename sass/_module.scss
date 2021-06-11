@@ -55,7 +55,7 @@ li {
 // Mobile Nav - CHANGE DROPMENU POSITION
 
 .navbar-nav .dropdown-menu {
-  @media (max-width: 991.98px) {
+  @media (max-width: $lg) {
     position: absolute !important;
   }
 }

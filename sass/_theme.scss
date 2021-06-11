@@ -1,7 +1,7 @@
 // Theme Logo
 .logo {
   font-size: 1.75em;
-  @media (max-width: 991.98px) {
+  @media (max-width: $lg) {
     font-size: 1.5em;
   }
 }
@@ -18,7 +18,7 @@
   height: 70vh;
   justify-content: center;
   width: 100%;
-  @media (max-width: 991.98px) {
+  @media (max-width: $lg) {
     height: 25vh;
     width: 100%;
   }
@@ -34,13 +34,33 @@
 }
 
 .wp-caption-text {
+  display: block;
   font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 5px;
   width: 800px;
-  @media (max-width: 991.98px) {
+  @media (max-width: $lg) {
     width: 250px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
+
+// Slideshow
+
+.ngg-imagebrowser.default-view{
+  margin: 0px !important;
+}
+
+.ngg-imagebrowser.default-view h3{
+  display: none;
+}
+
+.ngg-imagebrowser-nav .counter{
+  color: $dark;
+}
+
 // Blog pagination
 .screen-reader-text {
   color: $dark;
