@@ -10772,8 +10772,9 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: 'Cardo', serif;
-  font-size: 1.50em;
+  font-size: 1.35em;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 @media (max-width: 1080px) {
   h2, .h2 {
@@ -10785,6 +10786,7 @@ h3, .h3 {
   font-family: 'Cardo', serif;
   font-size: 1.25em;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 @media (max-width: 1080px) {
   h3, .h3 {
@@ -10796,6 +10798,7 @@ h4, .h4 {
   font-family: 'Cardo', serif;
   font-size: 1.15em;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 @media (max-width: 1080px) {
   h4, .h4 {
@@ -10807,6 +10810,7 @@ h5, .h5 {
   font-family: 'Cardo', serif;
   font-size: 1.10em;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 @media (max-width: 1080px) {
   h5, .h5 {
@@ -10826,6 +10830,11 @@ ul {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1em;
   font-weight: 500;
+}
+
+ol,
+ul {
+  padding-left: 0.25em;
 }
 
 .center-l {

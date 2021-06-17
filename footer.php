@@ -3,7 +3,7 @@
   <div class="row">
     <!-- Footer nav -->
     <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-10 col-xl-10">
-      <?php my_social_media_icons() ?>
+      <div class="px-4"><?php my_social_media_icons() ?></div>  
     </div>
 
     <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 footer-txt d-flex justify-content-end px-4">
